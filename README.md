@@ -4,3 +4,6 @@ This repo will contain everything I learned about cloud, this will mostly contai
 ## CCP
 The certified cloud practitioners exam, or `ccp` for short, validates the foundational, high level understanding of `AWS` cloud, services and terminology.
 
+For anything related to the ccp please see [/ccp](/ccp/01-intro.md)!
+
+
