@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "a0ec08cdd4e17af0",
+    "type": "split",
+    "children": [
+      {
+        "id": "429dfe174bd76164",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "218f4f186a793215",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ccp/01-intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4750d9308fbc63b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "09ca7086cca39f82",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97d0e8465df824f2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cd09d193cde0cc57",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0ad6943131e6b642",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a2cdbd18dc16c8e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf4a6b57de8dde59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93c4efab658bc45d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ccp/01-intro.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2f7177cdc9bcab7e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ccp/01-intro.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "957aa1e95185d74d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c34e84cffbbfc098",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ccp/01-intro.md"
+              }
+            }
+          },
+          {
+            "id": "3b430170c3b6ffe9",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 368.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "218f4f186a793215",
+  "lastOpenFiles": [
+    "().md",
+    "ccp/01-intro.md",
+    "README.md",
+    "ccp"
+  ]
+}
