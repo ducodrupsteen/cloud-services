@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "ccp/02-essentials.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df390c96e37fcff3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ccp/02-essentials.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#intro",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "ccp/02-essentials.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ccp/02-essentials.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "ccp/02-essentials.md"
               }
             }
           },
@@ -158,8 +170,9 @@
   },
   "active": "218f4f186a793215",
   "lastOpenFiles": [
-    "README.md",
     "ccp/01-intro.md",
+    "ccp/02-essentials.md",
+    "README.md",
     "().md",
     "ccp"
   ]
