@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ccp/02-essentials.md",
+                "file": "ccp/02-intro-to-aws.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ccp/02-essentials.md",
+                "file": "ccp/02-intro-to-aws.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ccp/02-essentials.md",
+                "file": "ccp/02-intro-to-aws.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ccp/02-essentials.md",
+                "file": "ccp/02-intro-to-aws.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ccp/02-essentials.md"
+                "file": "ccp/02-intro-to-aws.md"
               }
             }
           },
@@ -168,10 +168,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "218f4f186a793215",
+  "active": "97d0e8465df824f2",
   "lastOpenFiles": [
+    "Untitled",
     "ccp/01-intro.md",
-    "ccp/02-essentials.md",
+    "ccp/02-intro-to-aws.md",
     "README.md",
     "().md",
     "ccp"

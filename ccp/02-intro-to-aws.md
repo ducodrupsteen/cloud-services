@@ -1,23 +1,4 @@
-# AWS Cloud practitioner essentials
-Here we will seek an overall understanding of AWS Cloud. We will look into AWS Cloud concepts, AWS services, security architecture, pricing and support. This resource will help with preparation for the `ccp` exam.
-
-## Course outline
-This resource will look into the following 11 modules and the assessment related to those modules:
-1. [Intro to AWS and Cloud computing](#Intro%20to%20AWS%20and%20cloud%20computing)
-2. Compute in the cloud
-3. Global infrastructure and reliability
-4. Networking
-5. Storage and Databases
-6. Security
-7. Monitoring and Analytics
-8. Pricing and Support
-9. Migration and Innovation
-10. The cloud Journey
-11. AWS Certified cloud practitioner basics
-12. Course final assessment
-
-The first 10 modules will help us build knowledge by learning about AWS Cloud concepts, AWS services, security architecture, pricing and support. Module 11 will be preparation for the exam and the final assessment will conclude with a 30 question exam to test your knowledge.
-## Intro to AWS and Cloud computing
+# Intro to AWS and Cloud computing
 
 ### Intro to AWS
 AWS offers a wide range of services for every kind of business. Basic services like compute, storage and network security tools to complex services like blockchain, ML, AI robotics and specialized tools for video production management and orbital satellites you can rent by the minute. 

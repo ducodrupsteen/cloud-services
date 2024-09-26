@@ -27,3 +27,23 @@ The exam has the following container domains:
 - Billing, pricing and support (12% of scored content)
 
 For a more in dept overview of the domain please see [this link](https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf) (pages 3 to 14)!
+
+## AWS Cloud practitioner essentials
+Here we will seek an overall understanding of AWS Cloud. We will look into AWS Cloud concepts, AWS services, security architecture, pricing and support. This resource will help with preparation for the `ccp` exam.
+
+## Course outline
+This resource will look into the following 11 modules and the assessment related to those modules:
+1. [Intro to AWS and Cloud computing](./02-intro-to-aws.md)
+2. Compute in the cloud
+3. Global infrastructure and reliability
+4. Networking
+5. Storage and Databases
+6. Security
+7. Monitoring and Analytics
+8. Pricing and Support
+9. Migration and Innovation
+10. The cloud Journey
+11. AWS Certified cloud practitioner basics
+12. Course final assessment
+
+The first 10 modules will help us build knowledge by learning about AWS Cloud concepts, AWS services, security architecture, pricing and support. Module 11 will be preparation for the exam and the final assessment will conclude with a 30 question exam to test your knowledge.
