@@ -2,7 +2,7 @@
 This module mostly focused on `Amazon EC2` to summarize what we will learn:
 - Describe the benefits of [`EC2` at a basic level](#ec2-at-a-basic-level)
 - Identify the different [`EC2` instance types](#ec2-instance-types)
-- Differentiate between the various [billing options for `EC2`](#ec2-pricing)
+- Differentiate between the various [billing options for `EC2`](#ec2-billing-options)
 - Summarize the benefits of [`EC2` auto scaling](#scaling-ec2)
 - Summarize the benefits of `Elastic Load Balancing`
 - Give an example of the uses for `Elastic Load Balancing`
