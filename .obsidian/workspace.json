@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "9de4974469f7e7ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ccp/03-cloud-computing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "df390c96e37fcff3",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ccp/02-intro-to-aws.md",
+                "file": "ccp/03-cloud-computing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ccp/02-intro-to-aws.md",
+                "file": "ccp/03-cloud-computing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ccp/02-intro-to-aws.md"
+                "file": "ccp/03-cloud-computing.md"
               }
             }
           },
@@ -168,12 +181,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97d0e8465df824f2",
+  "active": "9de4974469f7e7ea",
   "lastOpenFiles": [
-    "Untitled",
     "ccp/01-intro.md",
-    "ccp/02-intro-to-aws.md",
+    "ccp/03-cloud-computing.md",
     "README.md",
+    "ccp/02-intro-to-aws.md",
+    "Untitled",
     "().md",
     "ccp"
   ]
