@@ -1,7 +1,7 @@
 # Compute in the cloud
 This module mostly focused on `Amazon EC2` to summarize what we will learn:
 - Describe the benefits of [`EC2` at a basic level](#ec2-at-a-basic-level)
-- Identify the different `EC2` instance types
+- Identify the different [`EC2` instance types](#ec2-instance-type)
 - Differentiate between the various billing options for `EC2`
 - Summarize the benefits of `EC2` auto scaling
 - Summarize the benefits of `Elastic Load Balancing`
@@ -37,4 +37,29 @@ All you have to do is request the `EC2` instances you want, and they will be boo
 - Third-party software
 
 They are also resize-able vertically, your app might need more resources as it grows, so you can choose to give it more CPU or more RAM. And you can also choose to scale it down whenever you want.
+
+## `EC2` instance types
+AWS provide different types of `EC2` instances to fit your needs. All these `instance types` are grouped under certain `instance families` and are optimized for certain tasks. `Instance types` offer different combinations of `cpu`, `memory`, `storage` and `networking capacities`. So you can choose a type that really fits your needs. 
+
+The different types of families are:
+- General purpose
+	- Balanced resources
+	- Diverse workloads
+	- Web servers
+	- Code repositories
+- Compute optimized
+	- Compute intensive tasks
+	- Gaming servers
+	- High performance computing (HPC)
+	- Scientific modeling
+- Memory optimized
+	- Memory intensive tasks
+	- Large datasets in memory
+	- High performance databases
+- Accelerated computing
+	- Floating point number calculations
+	- Graphics processing
+	- Data pattern matching
+- Storage optimized
+	- High performance for local data
 
