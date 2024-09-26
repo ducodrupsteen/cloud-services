@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ccp/03-cloud-computing.md",
+                "file": "ccp/01-intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ccp/03-cloud-computing.md",
+                "file": "ccp/01-intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ccp/03-cloud-computing.md",
+                "file": "ccp/01-intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ccp/03-cloud-computing.md"
+                "file": "ccp/01-intro.md"
               }
             }
           },
@@ -183,10 +183,10 @@
   },
   "active": "9de4974469f7e7ea",
   "lastOpenFiles": [
-    "ccp/01-intro.md",
-    "ccp/03-cloud-computing.md",
-    "README.md",
     "ccp/02-intro-to-aws.md",
+    "ccp/03-cloud-computing.md",
+    "ccp/01-intro.md",
+    "README.md",
     "Untitled",
     "().md",
     "ccp"

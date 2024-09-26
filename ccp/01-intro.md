@@ -34,7 +34,7 @@ Here we will seek an overall understanding of AWS Cloud. We will look into AWS C
 ## Course outline
 This resource will look into the following 11 modules and the assessment related to those modules:
 1. [Intro to AWS and Cloud computing](./02-intro-to-aws.md)
-2. [Compute in the cloud](./03-cloud-computing)
+2. [Compute in the cloud](./03-cloud-computing.md)
 3. Global infrastructure and reliability
 4. Networking
 5. Storage and Databases
