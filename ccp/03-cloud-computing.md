@@ -82,3 +82,21 @@ This is probably the cheapest and gives you up to 90% discount on the `On-Demand
 ### Dedicated hosts
 Here you will rent a whole host. These are used to meet certain compliance requirements and you won't share the tenancy with anyone else.
 
+## Scaling `EC2`
+One major benefit of AWS is `Scalablity` and `Elasticity`. How can capacity can grow and shrink based on what you need.
+
+When we take a look at an on premise solution one major problem is; How can you satisfy your demands? Obviously your work load will vary over time, are you going to buy hosts and infrastructure for peak demand? That wouldn't be cost efficient and you'll end up with idle hardware for most of the time. Are you going to buy for average demand? You'll get unsatisfied customers when you are at peak demand.
+
+With AWS, you're able to scale the services you use to meet demand, this is cost efficient and you'll have satisfied customers. You can setup AWS to scale to meet demand, and also for when disaster strikes. When one instance fails, we can programmatic create a new instance with the same setup so no one will be affected by it.
+
+With growing demand, you can `scale up` and `scale out`. With `Amazon EC2 Auto scaling` you can always ensure you have the right amount of instances when the demand asks for it. And if the demand is dropped, it will make sure those instances are turned off. This is different then the `vertical scaling` that was mentioned earlier. Scaling by adding or removing instances is called `horizontal scaling`, sometimes more power does not do the job, you just need more workers to take on the load.
+
+### Amazon EC2 Auto Scaling
+Like stated before, this service helps you scale the amount of `EC2` instances to you need. This can be done in two different approaches:
+- `Dynamic scaling`; this responds to the change in demand
+- `Predictive scaling`; this automatically schedules scaling based on predicted demand
+
+**You can also use these two approaches together**
+
+When you configure your auto scaling group, you can set certain thresholds, this means you can setup a desired amount of instances, these launch right away, a minimum, your application might only need one instance but you rather have two instances running and you can set a maximum capacity so things don't get out of control.
+
