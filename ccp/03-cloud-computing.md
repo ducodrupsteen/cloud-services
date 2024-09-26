@@ -2,7 +2,7 @@
 This module mostly focused on `Amazon EC2` to summarize what we will learn:
 - Describe the benefits of [`EC2` at a basic level](#ec2-at-a-basic-level)
 - Identify the different [`EC2` instance types](#ec2-instance-types)
-- Differentiate between the various billing options for `EC2`
+- Differentiate between the various [billing options for `EC2`](#ec2-pricing)
 - Summarize the benefits of `EC2` auto scaling
 - Summarize the benefits of `Elastic Load Balancing`
 - Give an example of the uses for `Elastic Load Balancing`
@@ -62,4 +62,23 @@ The different types of families are:
 	- Data pattern matching
 - Storage optimized
 	- High performance for local data
+
+## `EC2` billing options
+How much does it all costs? There are multiple types of billing options, depending on the instance type and operating system you choose.
+
+### On-Demand
+You only pay for the time your instance runs. This can be per hour or per second. This allows for no upfront payments or long term commitment.
+This is usually where you start, so you can spin up instances and play around with it.
+
+### Savings plan
+This offers low prices on `EC2` usage in exchange for a commitment for consistent usage, this is measured per hour and can be contracted for a 1 or 3 year term. Most of the time this results in a 72% lower costs on your `EC2` billing regardless of the instance type or family, size or region. This also applies to `AWS Faregate` or `AWS Lambda` which are serverless compute services.
+
+### Reserved instances
+This is suited for predictable usage and a steady workload. You can need to specify a instance family and size, platform, tenancy and region. When using `Reserved instances`, it can result in a 75% discount in comparison to the `On-Demand` pricing plan. This discount will apply once you commit to a 1 or 3 year plan, you can choose how you want to pay for it with 3 options. `Full upfront` where you pay everything upfront, `partial upfront` where you pay just a small part or `no upfront` where you don't pay anything upfront.
+
+### Spot instances
+This is probably the cheapest and gives you up to 90% discount on the `On-Demand` pricing options. With `Spot instances` you request spare `EC2` computing power, the only catch is that Amazon can take back the instance, whenever they want, they will give you a 2 minute warning to finish up the work and save state.
+
+### Dedicated hosts
+Here you will rent a whole host. These are used to meet certain compliance requirements and you won't share the tenancy with anyone else.
 
