@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d656739eafdeddf4",
+        "id": "40d091b40f4f3402",
         "type": "tabs",
         "children": [
           {
-            "id": "86768e69a7a96c38",
+            "id": "07498a05f4256a79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ccp/03-cloud-computing.md",
+                "file": "ccp/04-global-infrastructure.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ccp/03-cloud-computing.md",
+                "file": "ccp/04-global-infrastructure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ccp/03-cloud-computing.md",
+                "file": "ccp/04-global-infrastructure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ccp/03-cloud-computing.md"
+                "file": "ccp/04-global-infrastructure.md"
               }
             }
           },
@@ -155,11 +155,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "86768e69a7a96c38",
+  "active": "07498a05f4256a79",
   "lastOpenFiles": [
-    "ccp/01-intro.md",
     "ccp/03-cloud-computing.md",
+    "ccp/04-global-infrastructure.md",
     "ccp/02-intro-to-aws.md",
+    "ccp/01-intro.md",
     "README.md",
     "Untitled",
     "().md",

@@ -1,4 +1,4 @@
-# Intro to AWS and Cloud computing
+# Intro to AWS
 
 ### Intro to AWS
 AWS offers a wide range of services for every kind of business. Basic services like compute, storage and network security tools to complex services like blockchain, ML, AI robotics and specialized tools for video production management and orbital satellites you can rent by the minute. 
