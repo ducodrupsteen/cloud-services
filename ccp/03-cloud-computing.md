@@ -6,7 +6,7 @@ This module mostly focused on `Amazon EC2` to summarize what we will learn:
 - Summarize the benefits of [`EC2` auto scaling](#scaling-ec2)
 - Summarize the benefits of [`Elastic Load Balancing`](#directing-traffic-with-elastic-load-balancing)
 - Give an example of the uses for `Elastic Load Balancing`
-- Summarize the differences between `Amazon Simple Notification Service (Amazon SNS)` and `Amazon Simple Queue Service (Amazon SQS)`
+- Summarize the differences between [`Amazon Simple Notification Service (Amazon SNS)` and `Amazon Simple Queue Service (Amazon SQS)`](#messaging-and-queuing)
 - Summarize additional AWS compute options
 
 ## `EC2` at a basic level
@@ -106,3 +106,19 @@ So now that we can auto scale our `EC2` instances we need a way to make sure non
 `Elatic load balancer` automatically scales without any additional costs. It ramps up when you get more traffic, automatically balances the load when an instance is added to the group and it makes sure all requests are done before diverting requests to another instance when you remove one.
 
 Besides that `Elastic load balancer` can also be used to for internal traffic between, let's say, an front-end and back-end application. It can spread the load between your client and API when that is necessary.
+
+## Messaging and Queuing
+Messages and queues can help you decouple your applications. The benefit of this decoupling is that when one component of your application fails the dependent components won't fail. Let's say you have `App A` and `App B`, `App A` takes in requests, or sends a message, and `App B` processes those requests. When `App B` fails for some reason `App A` fails too, because the requests from `A` to `B` are not being processed, this system is `tightly coupled`.
+
+To prevent this kind of failure we can introduce a buffer or a queue between the applications. So instead of `App A` messaging `App B` directly, it places the messages in a queue. Now when `App B` fails `App A` will simply continue to fill the queue instead of coming to a halt. The system is now `loosely coupled`.
+
+AWS provides two services to achieve this type of architecture, `Amazon Simple Queue Service`, or `SQS` for short, and `Amazon Simple Notification Service` or `SNS`.
+
+### `SQS`
+With `SQS` you can send, receive and store messages between software components. It does not require any other service. The data stored in the messages is called a payload. This payload is protected until delivery. The underlying infra structure is managed by AWS,  it scales automatically, is reliable and easy to configure.
+
+### `SNS`
+`SNS` is similar in a way that it is used to send out messages, but it can also send out notifications to end users. It works with a publishing and subscribe model, or `pub/sub`.
+In `SNS` you can create a topic which acts like a channel where messages are published. Then you can configure subscribers for that topic and a single message will be delivered to those subscribers.
+
+Besides that you can also use `SNS` to send out mobile push notification, SMS and email.
