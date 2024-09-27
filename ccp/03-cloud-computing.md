@@ -119,6 +119,6 @@ With `SQS` you can send, receive and store messages between software components.
 
 ### `SNS`
 `SNS` is similar in a way that it is used to send out messages, but it can also send out notifications to end users. It works with a publishing and subscribe model, or `pub/sub`.
-In `SNS` you can create a topic which acts like a channel where messages are published. Then you can configure subscribers for that topic and a single message will be delivered to those subscribers.
+In `SNS` you can create a topic which acts like a channel where messages are published. Then you can configure subscribers for that topic and a single message will be delivered to those subscribers. With `SNS` a subscriber can be web servers, email addresses, Lambda functions or several other options 
 
 Besides that you can also use `SNS` to send out mobile push notification, SMS and email.
