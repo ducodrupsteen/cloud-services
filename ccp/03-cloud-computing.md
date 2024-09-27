@@ -4,7 +4,7 @@ This module mostly focused on `Amazon EC2` to summarize what we will learn:
 - Identify the different [`EC2` instance types](#ec2-instance-types)
 - Differentiate between the various [billing options for `EC2`](#ec2-billing-options)
 - Summarize the benefits of [`EC2` auto scaling](#scaling-ec2)
-- Summarize the benefits of `Elastic Load Balancing`
+- Summarize the benefits of [`Elastic Load Balancing`](#directing-traffic-with-elastic-load-balancing)
 - Give an example of the uses for `Elastic Load Balancing`
 - Summarize the differences between `Amazon Simple Notification Service (Amazon SNS)` and `Amazon Simple Queue Service (Amazon SQS)`
 - Summarize additional AWS compute options
@@ -100,3 +100,9 @@ Like stated before, this service helps you scale the amount of `EC2` instances t
 
 When you configure your auto scaling group, you can set certain thresholds, this means you can setup a desired amount of instances, these launch right away, a minimum, your application might only need one instance but you rather have two instances running and you can set a maximum capacity so things don't get out of control.
 
+## Directing traffic with Elastic Load Balancing
+So now that we can auto scale our `EC2` instances we need a way to make sure non of those instances aren't idle while others are busy with handling requests. `Elastic load balancing` can help with balancing the load between instances.  It acts as a single point of contact for all the traffic for your `Auto scaling group`. This means you can add or remove instances, the traffic will reach the load balancer first and evenly spread the traffic across your instances.
+
+`Elatic load balancer` automatically scales without any additional costs. It ramps up when you get more traffic, automatically balances the load when an instance is added to the group and it makes sure all requests are done before diverting requests to another instance when you remove one.
+
+Besides that `Elastic load balancer` can also be used to for internal traffic between, let's say, an front-end and back-end application. It can spread the load between your client and API when that is necessary.
