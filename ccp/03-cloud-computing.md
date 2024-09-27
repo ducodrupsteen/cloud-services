@@ -7,7 +7,7 @@ This module mostly focused on `Amazon EC2` to summarize what we will learn:
 - Summarize the benefits of [`Elastic Load Balancing`](#directing-traffic-with-elastic-load-balancing)
 - Give an example of the uses for `Elastic Load Balancing`
 - Summarize the differences between [`Amazon Simple Notification Service (Amazon SNS)` and `Amazon Simple Queue Service (Amazon SQS)`](#messaging-and-queuing)
-- Summarize additional AWS compute options
+- Summarize [additional AWS compute options](#additional-compute-services)
 
 ## `EC2` at a basic level
 Amazon Elastic Compute Cloud, or `Amazon EC2` for short, is your service for raw compute power. If we look at the coffee shop example from [Intro to AWS](./01-intro-to-aws.md), you know you're going to need compute power to serve `client` `requests` based on the `client-server model` we described there. `EC2` can provide you with the servers for that model.
@@ -122,3 +122,30 @@ With `SQS` you can send, receive and store messages between software components.
 In `SNS` you can create a topic which acts like a channel where messages are published. Then you can configure subscribers for that topic and a single message will be delivered to those subscribers. With `SNS` a subscriber can be web servers, email addresses, Lambda functions or several other options. 
 
 Besides that you can also use `SNS` to send out mobile push notification, SMS and email.
+
+## Additional compute services
+`EC2` is a great choice for a multiple use cases, like web servers, game server, graphics processing and a number of other things. But it does require you to manage you own instance and setup scaling. It is noting like managing an on-premise solution but you still need to have a managing system in place.
+\
+If you want less managing, you might have to go the `serverless` way. `Serverless` means you cannot see or access the underlying infrastructure or instances hosting you application. 
+Everything is taken care of for you. 
+Or if you do need access to some of the underlying environment but still want less management you can look at a container service that can orchestrate docker container for you.
+
+### AWS Lambda
+`AWS Lambda` is one of those `serverless` options. You upload you code to what is called a `Lambda function`. You can configure a trigger and the service runs your code once the trigger is detected. It automatically scales, so it does not matter if you have 1 or 1000 triggers happening. It is designed for scripts that run under 15 minutes.
+
+### AWS Elastic Container Service
+`AWS ECS` is one of those container orchestration tools. It is designed to help you run containerized application at scale, without any hassle.
+
+### AWS Elastic Kubernetes Service
+`AWS EKS` this service does a similar thing as `ECS` but it runs on `Kubernetes` 
+
+Both `ECS` and `EKS` can run on top of `EC2` instances, but you might not want to touch `EC2` at all. You can opt to use another compute service called `AWS Fargate`. `Fargate` is a serverless compute platform for `ECS` and `EKS`. 
+
+### To summarize
+If you want to host traditional applications and want full access to the underlying environment `EC2` is the way to go.
+
+If you want to host stand alone scripts or event based functions you want to look into `Lambda`.
+
+If you want to run containerized application, look into `ECS` or `EKS`.
+
+And if you don't want to manage `EC2` instances for your containers you probably want to use `Fargate`.
