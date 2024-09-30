@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ccp/04-global-infrastructure.md",
+                "file": "ccp/05-networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ccp/04-global-infrastructure.md",
+                "file": "ccp/05-networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ccp/04-global-infrastructure.md",
+                "file": "ccp/05-networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ccp/04-global-infrastructure.md"
+                "file": "ccp/05-networking.md"
               }
             }
           },
@@ -157,10 +157,11 @@
   },
   "active": "07498a05f4256a79",
   "lastOpenFiles": [
-    "ccp/02-intro-to-aws.md",
     "ccp/03-cloud-computing.md",
     "ccp/04-global-infrastructure.md",
+    "ccp/05-networking.md",
     "ccp/01-intro.md",
+    "ccp/02-intro-to-aws.md",
     "README.md",
     "Untitled",
     "().md",

@@ -36,7 +36,7 @@ This resource will look into the following 11 modules and the assessment related
 1. [Intro to AWS and Cloud computing](./02-intro-to-aws.md)
 2. [Compute in the cloud](./03-cloud-computing.md)
 3. [Global infrastructure and reliability](./04-global-infrastructure.md)
-4. Networking
+4. [Networking](./05-networking.md)
 5. Storage and Databases
 6. Security
 7. Monitoring and Analytics

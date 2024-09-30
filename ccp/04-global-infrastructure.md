@@ -60,5 +60,3 @@ With AWS Beanstalk you can easily setup `EC2` based environments. Instead of cli
 ### AWS CloudFormation
 `AWS CloudFormation` is an infrastructure as code tool that allows you to define a wide variety of AWS services, not just `EC2` based. You setup documents, called `CloudFormation templates`, these documents are written in a `JSON` or `Yaml` format. So you can define what you want to build, and the `CloudFormation Engine` will figure out how to build it, so you don't have to worry about the API calls. `CloudFormation` will provision you templates in parallel. The templates are repeatable in any account or region, the outcome will always be the same.
 
-
-
