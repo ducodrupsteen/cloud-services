@@ -3,7 +3,7 @@ AWS has data centers all over the world. Those data centers are divided into `re
 - Summarize the benefits of [AWS Global Infrastructure](#aws-global-infrastructure)
 - Describe the basic concept of [Availability Zones](#availability-zones)
 - Describe the benefits of [Amazon CloudFront and edge locations](#edge-locations)
-- Compare different methods for provisioning AWS services
+- Compare different methods for [provisioning AWS services](#provision-aws-resources)
 
 ## AWS Global Infrastructure
 AWS has data centers all over the world. These data centers are divided in regions, each region has multiple data centers and these regions are picked based on where traffic is in high demand. These regions contain data centers for all sorts of services, like compute, storage and many more. All regions are connected to each other by a high speed fiber network controlled by AWS. But no data is shared between regions unless you explicitly, with the right permissions and credentials, request data to be moved.
@@ -38,4 +38,27 @@ These `Edge Locations` are separate from regions. You can push content from a re
 
 ### AWS Outpost
 It is also possible to run AWS services inside your own data center, this service is called `AWS Outpost`. With `Outpost` AWS will basically install a mini region inside your own data center, this is owned and operated by AWS and uses 100% of AWS functionality, but it is isolated in your own building.
+
+## Provision AWS Resources
+There are different ways to interact with the services that are discussed until now. But it is good to know that everything in AWS is an API call. This means that there are certain ways to interact with AWS services. You can call these APIs to setup, configure and manage your AWS resources.
+
+### AWS Management Console
+The AWS Management Console is a browser based interface. This is a great way to get started, it allows you to visually interact with AWS services. It is also great for viewing AWS bills, monitoring and working with non technical resources.
+
+The downside here is that it is a lot of clicking, and it is easy to miss certain settings. It gets also really repetitive if you want to spin up multiple instances of a service, you will have to click through the same collection of screens multiple times.
+
+### AWS CLI
+The AWS CLI allows you to make API calls through your terminal. Writing commands using the CLI makes making API calls to AWS very repeatable. You can easily prewrite some commands, this would make it less error prone and you could even schedule these type of commands.
+
+### AWS SDKs
+AWS also provides SDKs for a wide range of programming languages. This would allow you to develop your own program to interact with AWS without the need for any low level API calls. This also prevents the need for manual resource creation like with the browser console.
+
+Besides these DIY solutions, AWS also provides some managed tools to provision AWS resources.
+### AWS Elastic Beanstalk
+With AWS Beanstalk you can easily setup `EC2` based environments. Instead of clicking or writing commands, you can provide Elastic Beanstalk your application code and desired configuration and it handles the rest. It sets up you network, `EC2` instances, scaling and load balancers. You can also save environments to easily redeploy it. It provides a way were you don't have to configure it all by yourself, but you still have access to the underlying resources.
+
+### AWS CloudFormation
+`AWS CloudFormation` is an infrastructure as code tool that allows you to define a wide variety of AWS services, not just `EC2` based. You setup documents, called `CloudFormation templates`, these documents are written in a `JSON` or `Yaml` format. So you can define what you want to build, and the `CloudFormation Engine` will figure out how to build it, so you don't have to worry about the API calls. `CloudFormation` will provision you templates in parallel. The templates are repeatable in any account or region, the outcome will always be the same.
+
+
 
