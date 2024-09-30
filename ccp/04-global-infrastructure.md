@@ -2,7 +2,7 @@
 AWS has data centers all over the world. Those data centers are divided into `regions`. In this module we'll go into debt about those regions and we'll learn the following:
 - Summarize the benefits of [AWS Global Infrastructure](#aws-global-infrastructure)
 - Describe the basic concept of [Availability Zones](#availability-zones)
-- Describe the benefits of Amazon CloudFront and edge locations
+- Describe the benefits of [Amazon CloudFront and edge locations](#edge-locations)
 - Compare different methods for provisioning AWS services
 
 ## AWS Global Infrastructure
@@ -28,4 +28,14 @@ To be as disaster proof as possibly, you might not want to run your software in 
 When you run one `EC2` instance, it runs in just one `AZ`. So if you want to be disaster proof it is obvious to run more instances in different `AZ`s. Even though it might be more spread out, the latency between `AZ`s is still in the single digits.
 
 Many of the AWS services run at a region level, this means that they run synchronously across multiple `AZ`s. If you look a `ELB`, this is a regional service that runs across `AZ`s and talks to `EC2` instances in a specific `AZ`.
+
+## Edge locations
+You or your users might need to access data from all over the world but you've only hosted your data in one region. Instead of having users from everywhere connect to your single region. You can place a copy locally or cache a copy in different regions.
+
+Caching copies of data closer to the customers all around the world uses the concept of content delivery networks, or `CDN`s. This is commonly used, and at AWS it is called `CloudFront`. Amazon `CloudFront` is a service that helps you deliver data, video, applications and APIs to your users. It uses something called `Edge Locations`.
+
+These `Edge Locations` are separate from regions. You can push content from a region to a collection of `Edge Locations`. This helps you with faster delivery times of data. `Edge Locations` also run more then `CloudFront`. They run a Domain Name Service called `Route53`, this helps with directing users to the correct location on the web.
+
+### AWS Outpost
+It is also possible to run AWS services inside your own data center, this service is called `AWS Outpost`. With `Outpost` AWS will basically install a mini region inside your own data center, this is owned and operated by AWS and uses 100% of AWS functionality, but it is isolated in your own building.
 
