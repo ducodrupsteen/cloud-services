@@ -142,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5
+    "width": 368.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -157,11 +158,11 @@
   },
   "active": "07498a05f4256a79",
   "lastOpenFiles": [
-    "ccp/03-cloud-computing.md",
     "ccp/04-global-infrastructure.md",
+    "ccp/03-cloud-computing.md",
     "ccp/05-networking.md",
-    "ccp/01-intro.md",
     "ccp/02-intro-to-aws.md",
+    "ccp/01-intro.md",
     "README.md",
     "Untitled",
     "().md",
