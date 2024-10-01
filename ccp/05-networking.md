@@ -102,4 +102,33 @@ C4Container
 This type of connection also helps you reduce network costs and increase the amount of bandwidth.
 
 ## Layers of security
+Here we will have a look at `network hardening`, the process of securing a network, and at what happens inside a `VPC`. The only technical reason to use `subnets` in a `VPC` is to control access to gateways. The public subnets have access to the internet gateway and the private ones don't. But subnets can also control traffic permission. When a packet is received by a subnet boundary, it gets checked by a network control access list, or `network ACL`. This is to see if the packet has permission to access or leave the boundaries based on who it is send by or how it is trying to communicate.
 
+This is great, because now we can control what comes in and what goes out. But a network `ACL` is only to see if a packet can reach our subnet, this does not necessarily check if the packet can reach one of your `EC2` instances within the subnet. Your instances might have different rule. To solve this, every instance is part of a `security group`. By default this group does not allow any traffic, all ports are blocked. You can configure this `security group` to accept specific types of traffic. For example, you can only accept web-based traffic and not an operating system or administration requests.
+
+These two security layers are very similar, the key difference is that a security group is stateful, it remembers what to accept. An `ACL` is stateless, it checks every single packet that crosses the subnet's boundary. 
+
+By default instance security groups are configured to let all traffic out. But the network `ACL` will still check the packet. And here you see the statelessness at work, it does not care if it came in before, it will still go through it's list to check if it is allowed out. Now lets say this packet went to another `EC2` instance and was passed back again, it passes the inbound network ACL check and the security group check, then it is returned, it passes the outbound / inbound `ACL` check, then we have the inbound security group check. Because this instance send this packet earlier the security group lets it through, here you see the statefulness in action! 
+
+It seems like a lot, and it might seem like it generates a lot of networking overhead. But this all happens instantly as part of how AWS Networking actually works.
+
+```mermaid
+C4Context
+	Person(Client, "Client")
+	Enterprise_Boundary(AwsCloud, "AWS Cloud") {
+		System(InternetGateway, "Internet Gateway")
+		System_Boundary(AwsVPC, "VPC") {
+			System(NetworkACL, "Network access control list")
+			System_Boundary(PublicSubnet, "Public Subnet") {
+				System(SecurityGroup, "Security Group")
+				System(AwsEC2, "EC2 Instances")
+			}
+		}
+	}
+
+	Rel(Client, InternetGateway, "Packet gets send")
+	Rel(InternetGateway, NetworkACL, "")
+	Rel(NetworkACL, SecurityGroup, "ACL verified packet")
+	Rel(SecurityGroup, AwsEC2, "Security group verified packet")
+	UpdateRelStyle(SecurityGroup, AwsEC2, $offsetX="-50", $offsetY="-10")
+```
