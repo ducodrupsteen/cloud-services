@@ -5,7 +5,7 @@ We now have a couple of things running in the cloud, but all our services might 
 - Explain a virtual [private gateway](#virtual-private-gateway) using a real life scenario
 - Describe the benefit of [AWS Direct Connect](#aws-direct-connect)
 - Describe the [layers of security](#layers-of-security) used in an IT strategy
-- Describe the services customers use to interact with AWS global network
+- Describe the services customers use to interact with [AWS global network](#aws-global-network)
 
 ## Basic concept of networking
 A `VPC` allows you to define your private IP range for you AWS resources, and you place things like `EC2` instances ans `ELB`s inside of you `VPC`.
@@ -132,3 +132,20 @@ C4Context
 	Rel(SecurityGroup, AwsEC2, "Security group verified packet")
 	UpdateRelStyle(SecurityGroup, AwsEC2, $offsetX="-50", $offsetY="-10")
 ```
+
+## AWS Global Network
+How does it work when a user enters a domain name into the URL bar in a browser? How do they get to the right site? This is thanks to the `Domain Name System` or `DNS`. The `DNS resolver` a user uses communicates with a `DNS server` to lookup what `Internet Protocal address` or `IP address` is linked to a domain name. 
+
+### Route 53
+`Route 53` is a `DNS web service`, it can give you a reliable way to route users to application hosted on AWS, or it can route users to applications outside AWS.  
+
+`Route 53` allows you to manage `DNS records` for a domain, you can also register new domain names, transfer and copy existing domain names, this enables you to manage your domains from one place.
+
+Further `Route 53` can route traffic to different endpoints based om some policies, such as:
+- Latency
+- Geolocation DNS
+- Geoproximity
+- Weighted round robin
+
+This helps you route your traffic to the closest regions, so your users can have a optimal experience while using your web application.
+This works great with `AWS CloudFront` we could host static assets in an Edge location even closer to the user, this would ensure the most latency optimized experience.
