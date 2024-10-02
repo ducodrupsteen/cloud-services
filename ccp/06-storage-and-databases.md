@@ -3,9 +3,9 @@ We're going to look to how we can expand on our highly available and secure glob
 We'll look at:
 - [Instance Stores and Amazon Elastic Block Store (Amazon EBS)](#instance-stores-and-amazon-abs)
 - [Amazon Simple Storage Service](#amazon-simple-storage-service) (Amazon S3)
-- Amazon Elastic File System (Amazon EFS)
-- Amazon Relational Database Service (Amazon RDS)
-- Amazon DynamoDB
+- [Amazon Elastic File System](#amazon-elastic-file-system) (Amazon EFS)
+- [Amazon Relational Database Service](#amazon-relational-database-service) (Amazon RDS)
+- [Amazon DynamoDB](#amazon-dynamodb)
 - Amazon Redshift
 - AWS Database Migration Service
 - Additional Database Services
@@ -64,3 +64,27 @@ Compared to block storage and object storage, file storage is ideal for handling
 `EBS` volumes are stored in a **single** `AZ`. It is designed to be attached to an `EC2` instance. And both the `EC2` instance and `EBD` volume must life in the same `AZ`.
 
 `EFS` stores data across multiple `AZ`s in a region. The duplicated storage allows for fast retrieval from any `AZ` within the region.
+
+## Amazon Relational Database Service
+`Amazon RDS` is a service to run relational databases in the AWS Cloud. `RDS` is a managed service, so you won't have to worry about provisioning hardware, setup, patching and backups. Thanks to this AWS enables you to spend less time on these administrative tasks and you can spend time on using data to innovate your applications. 
+`RDS` integrates with other services, like `Lambda` to query your data from a serverless application. Next to that it offers different security options like encryption at rest or encryption in transit.
+
+### Engines
+`RDS` offers 6 different database options which optimize for memory, performance or I/O:
+- Amazon Aurora
+- PostgreSQL
+- MySQL
+- MariaDB
+- Oracle Database
+- Microsoft SQL Server
+
+### Aurora
+`Aurora` is an enterprise-class relational database. It's compatible with MySQL and PostgreSQL. It is up to five times faster than standard MySQL databases and up to three times faster then PostgreSQL. Aurora can help you reduce your database costs by reducing unnecessary I/O. It also copies your data six times across three different `AZ`s.
+
+## Amazon DynamoDB
+`DynamoDB` is non relational database. A non relational database does not adhere to a single structure, you could opt for a key-value pair structure. In a key-value pair structure you can add or remove attributes at any time, not every item in the table is required to have the same attributes.
+
+`DynamoDB` is such a key-value pair database service. It delivers single digit milliseconds performance at any scale.
+
+This is a serverless service that is fully managed, so no provisioning, patching, managing servers or installing or maintaining. It scales automatically based on the size of your database. 
+
