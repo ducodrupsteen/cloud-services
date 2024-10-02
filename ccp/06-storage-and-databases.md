@@ -52,3 +52,15 @@ There are several types of storage classes:
 - Outpost
 	- Create S3 buckets on Amazon S3 Outpost
 	- Makes it easier to retrieve store and access data on AWS Outpost
+
+## Amazon Elastic File System
+In file storage, multiple clients can access data that is stored in shared folders. A storage server uses block storage with a local, Linux, file system to organize files. Clients can access the data through file paths.
+
+Compared to block storage and object storage, file storage is ideal for handling a large number of clients.
+
+`Amazon EFS` is an automatically scaled file system used with AWS Cloud services and on-premise resources.
+
+### Compared to `EBS`
+`EBS` volumes are stored in a **single** `AZ`. It is designed to be attached to an `EC2` instance. And both the `EC2` instance and `EBD` volume must life in the same `AZ`.
+
+`EFS` stores data across multiple `AZ`s in a region. The duplicated storage allows for fast retrieval from any `AZ` within the region.
