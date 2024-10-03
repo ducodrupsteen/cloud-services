@@ -8,7 +8,7 @@ We'll look at:
 - [Amazon DynamoDB](#amazon-dynamodb)
 - [Amazon Redshift](#amazon-redshift)
 - [AWS Database Migration Service](#aws-database-migration-service)
-- Additional Database Services
+- [Additional Database Services](#additional-database-services)
 
 ## Instance Stores and Amazon EBS
 Instance store are `Block-level storage`, this is like a physical hard drive. The kind of storage your PC uses. Instance stores provide temporary block-level storage for an `EC2` instance. It is a disk attached to the host of the `EC2` instance. When an instance is terminated, all data will be lost. So you don't want to store data that you need to persist. This is because `EC2` instances are virtual, when you stop and restart an instance, it might start on a different host then before.
@@ -96,3 +96,17 @@ This is a serverless service that is fully managed, so no provisioning, patching
 
 `DMS` also makes it easier to enable development against a production database, combine several database into one and sending ongoing data copies to targets instead of doing one-time migrations.
 
+## Additional database services
+Next to the managed database services we discussed here, AWS offers some other services. Of course there is no one-size-fits-all when it comes to databases. So here are some more database services AWS offers:
+- DocumentDB
+	- A document database service that supports MongoDB workloads
+- Neptune
+	- A graph based database service, great for working with highly connected dataset such as recommendation engines, fraud detection and knowledge graphs.
+- Quantum Ledger Database, `QLDB`
+	- A ledger database service, if you want a complete history of all the changes that have been made to you application data.
+- Managed Blockchain
+	- A service that you can use to create and manage blockchain networks with open-source frameworks.
+- ElastiCache
+	- This service adds caching layers on top of your database to help improve the read times of frequent requests. It supports `Redis` and `Memcached`.
+- DynamoDB Accelerator, `DAX`
+	- A in-memory cache for DynamoDB, it helps to improve response times from single-digit milliseconds to microseconds.
