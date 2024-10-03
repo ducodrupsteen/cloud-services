@@ -88,3 +88,6 @@ Compared to block storage and object storage, file storage is ideal for handling
 
 This is a serverless service that is fully managed, so no provisioning, patching, managing servers or installing or maintaining. It scales automatically based on the size of your database. 
 
+## Amazon Redshift
+`Redshift` is a data warehouse that you can use to analyze `big data`. Most databases tent to work great at certain capacities. The problem with historical data, that answers questions like "Show me how something improved overtime", is that the data collection never stops. The data can become overwhelming for even the beefiest relational databases. Not only volume, but the variety of data can be a problem. If you want to query projects against multiple databases, to analyze some store data for example, that sounds really nice, but it is not handled very well with traditional relational databases. This is where data warehouses come in. They are designed to query historical data like "How many orders did we get in the last hour in all of our stores".  Data warehouses are designed to handle these queries against massive datasets, or otherwise know as `big data`. `Redshift` helps you to collect data from multiple resources and understand the relationships and trends in your data.
+

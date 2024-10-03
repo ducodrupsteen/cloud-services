@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "40d091b40f4f3402",
+        "id": "db043fdb24333a27",
         "type": "tabs",
         "children": [
           {
-            "id": "07498a05f4256a79",
+            "id": "60103fad356ec39f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ccp/01-intro.md",
+                "file": "ccp/06-storage-and-databases.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ccp/01-intro.md",
+                "file": "ccp/06-storage-and-databases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ccp/01-intro.md",
+                "file": "ccp/06-storage-and-databases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ccp/01-intro.md"
+                "file": "ccp/06-storage-and-databases.md"
               }
             }
           },
@@ -156,14 +156,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07498a05f4256a79",
+  "active": "60103fad356ec39f",
   "lastOpenFiles": [
-    "ccp/06-storage-and-databases.md",
-    "ccp/05-networking.md",
     "ccp/04-global-infrastructure.md",
     "ccp/03-cloud-computing.md",
-    "ccp/02-intro-to-aws.md",
+    "ccp/06-storage-and-databases.md",
     "ccp/01-intro.md",
+    "ccp/05-networking.md",
+    "ccp/02-intro-to-aws.md",
     "README.md",
     "Untitled",
     "().md",
