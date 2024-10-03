@@ -38,7 +38,7 @@ This resource will look into the following 11 modules and the assessment related
 3. [Global infrastructure and reliability](./04-global-infrastructure.md)
 4. [Networking](./05-networking.md)
 5. [Storage and Databases](./06-storage-and-databases.md)
-6. Security
+6. [Security](./07-security.md)
 7. Monitoring and Analytics
 8. Pricing and Support
 9. Migration and Innovation
