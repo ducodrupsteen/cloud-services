@@ -2,7 +2,7 @@
 We're going to look into what security measures there are. What can we do our self and what measures does AWS have. We'll look into the following:
 - AWS [Shared Responsibility Model](#shared-responsibility-model)
 - [User Permission and Access](#user-permission-and-access)
-- AWS Organizations
+- [AWS Organizations](#aws-organizations)
 - Compliance
 - Denial-of-Service Attacks
 - Additional Security Services
@@ -60,3 +60,25 @@ With `AWS Organizations` you can control permissions for accounts within an orga
 In Organizations, you can group accounts into organizational units, `OU`'s to make managing those accounts easier. You can apply policies to those `OU` which allows you to group accounts with similar business or security requirements.
 
 So for example, you can create Organizations for finance, IT, HR and legal. HR and legal might have similar requirements, so it makes sense to place those two in an `OU`.
+
+## Compliance
+Depending on the industry or region you operate in you might need to uphold specific standards. An audit or inspection will ensure that you meet those standards.
+
+### AWS Artifact
+`AWS Artifact` is a service that gives you access to security and compliance reports, and allows you to select online agreements. It consists of two parts, Agreements and Reports.
+
+#### Agreements
+`Artifact Agreements` let's you review and accept certain agreements based on the regulations that apply to the customer. You accept these agreements for either an individual account or your whole organization.
+
+#### Reports
+`Artifact Reports` provides compliance reports from third party auditors. These auditors have tested and verified AWS is compliant with all sorts of standards and regulations.
+
+### Customer compliance center
+At the customer compliance center you can read various stories to discover how others have solved various compliance, governance and audit challanges.
+
+Next to that you can read various white papers on;
+- AWS awnsers to key compliance questions
+- An overview of AWS risk and compliance
+- An auditing security checklist
+
+Besides that it also includes a learning path to auditing, for anyone that is interested in compliance, auditing and any other legal matters.
