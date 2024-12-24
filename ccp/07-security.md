@@ -1,7 +1,7 @@
 # Security
 We're going to look into what security measures there are. What can we do our self and what measures does AWS have. We'll look into the following:
-- AWS [Shared Responsibility Model](#shared-responsibility)
-- User Permissions and Access
+- AWS [Shared Responsibility Model](#shared-responsibility-model)
+- [User Permission and Access](#user-permission-and-access)
 - AWS Organizations
 - Compliance
 - Denial-of-Service Attacks
@@ -52,3 +52,11 @@ But making many account and granting permission through countless of policies ca
 Instead of assigning a policy to a single or multiple user(s) we simply create a group with a policy and add users who need access to the service to that group.
 
 There is also something called `IAM Roles`, this is generally used to grant temporary permission. To switch to a role a user needs permission to do so, and once they have switched they will lose all permission they previously had.
+
+## AWS Organizations
+With `AWS Organizations` you can control permissions for accounts within an organization by using [service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html). These policies allow you to place restrictions on AWS services, resources and API actions that users and roles in each account can access.
+
+### Organizational units
+In Organizations, you can group accounts into organizational units, `OU`'s to make managing those accounts easier. You can apply policies to those `OU` which allows you to group accounts with similar business or security requirements.
+
+So for example, you can create Organizations for finance, IT, HR and legal. HR and legal might have similar requirements, so it makes sense to place those two in an `OU`.
