@@ -74,7 +74,7 @@ Depending on the industry or region you operate in you might need to uphold spec
 `Artifact Reports` provides compliance reports from third party auditors. These auditors have tested and verified AWS is compliant with all sorts of standards and regulations.
 
 ### Customer compliance center
-At the customer compliance center you can read various stories to discover how others have solved various compliance, governance and audit challanges.
+At the customer compliance center you can read various stories to discover how others have solved various compliance, governance and audit challenges.
 
 Next to that you can read various white papers on;
 - AWS awnsers to key compliance questions
@@ -82,3 +82,33 @@ Next to that you can read various white papers on;
 - An auditing security checklist
 
 Besides that it also includes a learning path to auditing, for anyone that is interested in compliance, auditing and any other legal matters.
+
+## Denial of service attacks
+A denial-of-service, `DoS`, attack is a deliberate attempt to make a website or application unavailable to users. Someone might overflow your application with requests, which slows everything down and prevents actual user from making any requests.
+
+These request also might come from multiple sources, which would make it a Distributed denial of service `DDoS` attack. This could either be a group of people, or a single attacker making use of bots.
+
+### AWS Shield
+`AWS Shield` can help you minimize the effect a `DoS` or `DDoS` attack has on your application.
+You can use this services in two ways:
+
+#### AWS Shield Standard
+`AWS Shield Standard` automatically protects all AWS customers at no cost. It protect AWS resources from the most common and frequently occurring types of `DDoS` attacks. As traffic comes in, it analysis the traffic and it is able to detect malicious traffic.
+
+#### AWS Shield Advanced
+`AWS Shield Advanced` is a paid service, it provides detailed attack diagnostics and the ability to detect and migrate sophisticated `DDoS` attacks.
+It also integrates with other services such as `CloudFront`, `Route 53`, `ELB` and additionally you can integrate `Shield` with `AWS WAF` by writing custom rules to migrate complex `DDoS` attacks.
+
+## Additional Security Services
+
+### AWS Key Management Service `AWS KMS`
+This service enables you to perform encryption operations through the use of cryptographic keys. You can use `AWS KMS` to create, manage and use cryptographic keys to encrypt and decrypt data. You can also control the use of keys across a wide range of services. For example, you can specify which IAM users and roles are able to manage keys.
+
+### AWS WAF
+`AWS WAF` is a web application firewall that lets you monitor network requests that come into your web application. `WAF` works together with `CloudFront` and an `ALB`. `WAF` works by using a web access control list, `ACL`, to protect your AWS resources. For example, you have been receiving malicious requests from several IP addresses. You can configure your `web acl` to allow requests from everywhere except those IP addresses.
+
+### Amazon Inspector
+Amazon inspector helps to improve the security and compliance of applications by running automated security assessments. It performs security checks for vulnerabilities and deviations from security best practices.
+
+### Amazon GuardDuty
+Amazon GuardDuty is a service that identifies threats by continuously monitoring the network activities and account behavior within your AWS environment.
